@@ -1,14 +1,17 @@
-html{
-
-
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .principal {
-    color: red;
-    background-color: blue;
+    margin: auto;
+    padding: 4rem;
+    width: 300px;
     display: flex;
     align-items: center;
-    align-content: center;
-
+    justify-content: center;
+    background-color: rgb(97, 204, 106);
 
 }
