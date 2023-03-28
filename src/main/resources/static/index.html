@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Placar</title>
+    <script>
+        setInterval(function() {
+            var tempo = parseInt(document.getElementById("tempo").innerText);
+            tempo++;
+            document.getElementById("tempo").innerText = tempo;
+        }, 1000);
+    </script>
+</head>
+<body>
+<h1>Placar</h1>
+<div class="principal">
+    <form action="/atualizar" method="post">
+        <label>Time da casa:</label>
+        <input type="text" name="timeCasa" th:value="${placar.timeCasa}" /><br/>
+        <label>Time visitante:</label>
+        <input type="text" name="timeVisitante" th:value="${placar.timeVisitante}" /><br/>
+        <label>Tempo de jogo:</label>
+        <span id="tempo" th:text="${placar.tempoJogo}">0</span><br/>
+        <input type="submit" value="Atualizar placar" />
+    </form>
+</div>
+</body>
+</html>
+

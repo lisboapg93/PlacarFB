@@ -1,0 +1,14 @@
+html{
+
+
+}
+
+.principal {
+    color: red;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+
+}
